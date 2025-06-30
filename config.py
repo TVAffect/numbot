@@ -1,1 +1,2 @@
-token='7421226581:AAFXhcxTLwLYAE97_3M5bYnJs6ay_J1x9eM'
+token='0:A'
+password=...
