@@ -1,7 +1,7 @@
 import telebot
 import json
 from telebot import types
-from config import token
+from config import token, password
 
 
 bot=telebot.TeleBot(token)
@@ -36,7 +36,7 @@ def help(message):
 @bot.message_handler(commands=['pass'])
 def com_pass(message):
     passwd=message.text.replace('/pass','')
-    if passwd=='есенин повесился':
+    if passwd==password:
 		bot.send.message(message.chat.id,'Теперь этот чат авторизован! Можете пользоваться всеми моими командами'
 	else:
 		bot.send.message(message.chat.id,'Неправильный пароль!')
